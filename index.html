@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  const firebaseConfig = {
+  apiKey: "AIzaSyAw0-ARMoEzljpgOt-dDV-XSpZURyt9MbM",
+  authDomain: "tlsgb-mhe-training.firebaseapp.com",
+  projectId: "tlsgb-mhe-training",
+  storageBucket: "tlsgb-mhe-training.firebasestorage.app",
+  messagingSenderId: "537371832442",
+  appId: "1:537371832442:web:01f33a8d994df9cc7fcbc3"
+};
+  <meta charset="UTF-8">
+  <title>MHE Training Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Company Logo" class="logo">
+
+    <h2>Filter by Shift</h2>
+    <select id="shiftFilter">
+      <option value="All">All</option>
+      <option value="Office">Office</option>
+      <option value="Red">Red</option>
+      <option value="Grey">Grey</option>
+      <option value="Nights">Nights</option>
+    </select>
+
+    <h2>Upcoming Refreshers</h2>
+    <p id="summaryCounts"></p>
+    <ul id="refresherList"></ul>
+
+    <h2>Find Person</h2>
+    <input type="text" id="searchBar" placeholder="Search person...">
+    <select id="nameDropdown"></select>
+    <button id="goBtn">Go</button>
+  </div>
+
+  <script src="dashboard.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js")
+        .then(() => console.log("Service Worker registered"));
+    }
+  </script>
+</body>
+</html>

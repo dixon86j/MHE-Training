@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Person Training Records</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Person name -->
+    <h2 id="personName"></h2>
+
+    <!-- Training info -->
+    <div id="trainingInfo"></div>
+
+    <!-- Add new training -->
+    <h3>Add Training</h3>
+    <label for="trainingDate">Training Date:</label>
+    <input type="date" id="trainingDate">
+
+    <div class="checkboxes">
+      <label><input type="checkbox" class="mheOption" value="Forklift (FLT)"> Forklift (FLT)</label>
+      <label><input type="checkbox" class="mheOption" value="H.Ome"> H.Ome</label>
+      <label><input type="checkbox" class="mheOption" value="Hi-Lop"> Hi-Lop</label>
+      <label><input type="checkbox" class="mheOption" value="Llop"> Llop</label>
+      <label><input type="checkbox" class="mheOption" value="Ergomover"> Ergomover</label>
+      <label><input type="checkbox" class="mheOption" value="Stacker"> Stacker</label>
+      <label><input type="checkbox" class="mheOption" value="Powered Pallet Truck (PPT)"> Powered Pallet Truck (PPT)</label>
+      <label><input type="checkbox" class="mheOption" value="VCE"> VCE</label>
+    </div>
+
+    <button id="addBtn">Add Training</button>
+    <button id="saveBtn">Save Records</button>
+    <button id="backBtn">Back to Dashboard</button>
+
+    <p id="saveMessage">Saved ✅</p>
+  </div>
+
+  <script src="person.js"></script>
+</body>
+</html>
